@@ -6,8 +6,6 @@
 
 Este repositório contém a implementação e análise de modelos de detecção de objetos para o dataset KITTI, com foco em aplicações para veículos autônomos. O projeto explora e compara a arquitetura de dois estágios **Faster R-CNN** (com diferentes backbones) e a arquitetura de estágio único **YOLOv8**.
 
-![Exemplo de Detecção](caminho/para/sua/imagem_de_exemplo.png)
-
 ## Índice
 
 1.  [Objetivos do Projeto](#objetivos-do-projeto)
@@ -33,7 +31,6 @@ Utilizamos o dataset KITTI, um dos principais benchmarks para visão computacion
 
 A principal característica e desafio deste dataset é o **severo desbalanceamento de classes**. Uma análise do nosso conjunto de treino revelou a seguinte distribuição:
 
-![Distribuição de Classes no Dataset de Treino](caminho/para/seu/grafico_distribuicao.png)
 
 Este desbalanceamento, com a classe `Car` sendo massivamente dominante, impacta diretamente o treinamento e o desempenho dos modelos nas classes minoritárias.
 
@@ -89,8 +86,6 @@ Para avaliar o impacto do backbone, ambos os modelos foram treinados por 5 époc
 | **AP para `Cyclist`** | N/A | **0.468** | ✅ **YOLOv8** |
 
 ### 3. Análise Visual de Casos Específicos
-
-![Análise de Oclusão](caminho/para/sua/imagem_de_analise.png)
 
 **Análise:** Em testes qualitativos, o YOLOv8, com seu recall superior, demonstrou maior capacidade de detectar objetos parcialmente ocluídos, enquanto o Faster R-CNN produziu caixas delimitadoras ligeiramente mais precisas para os objetos que detectou.
 
