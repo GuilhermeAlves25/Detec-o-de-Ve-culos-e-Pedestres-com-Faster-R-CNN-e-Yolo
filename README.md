@@ -31,6 +31,9 @@ Utilizamos o dataset KITTI, um dos principais benchmarks para visão computacion
 
 A principal característica e desafio deste dataset é o **severo desbalanceamento de classes**. Uma análise do nosso conjunto de treino revelou a seguinte distribuição:
 
+Carro: 23.007 objetos
+Pedestre: 3.599 objetos
+Ciclista: 1.295 objetos
 
 Este desbalanceamento, com a classe `Car` sendo massivamente dominante, impacta diretamente o treinamento e o desempenho dos modelos nas classes minoritárias.
 
