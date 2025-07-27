@@ -82,11 +82,11 @@ Para avaliar o impacto do backbone, ambos os modelos foram treinados por 5 époc
 
 | Métrica | **Faster R-CNN (ResNet-50)** | **YOLOv8n** | Vantagem |
 | :--- | :--- | :--- | :--- |
-| **Tempo por Época** | ~8-12 minutos | **~45 segundos** | 🚀 **YOLOv8** |
-| **mAP (0.50:0.95)** | **0.5438** | 0.525 | 🎯 **Faster R-CNN** |
-| **Recall Médio** | 0.6227 | **0.705** | 🔍 **YOLOv8** |
-| **AP para `Pedestrian`**| N/A | **0.393** | ✅ **YOLOv8** |
-| **AP para `Cyclist`** | N/A | **0.468** | ✅ **YOLOv8** |
+| **Tempo por Época** | ~18-20 minutos | **~45 segundos** | **YOLOv8** |
+| **mAP (0.50:0.95)** | **0.5438** | 0.525 | **Faster R-CNN** |
+| **Recall Médio** | 0.6227 | **0.705** |  **YOLOv8** |
+| **AP para `Pedestrian`**| N/A | **0.393** | **YOLOv8** |
+| **AP para `Cyclist`** | N/A | **0.468** | **YOLOv8** |
 
 ### 3. Análise Visual de Casos Específicos
 
@@ -101,12 +101,3 @@ O projeto demonstrou com sucesso a implementação e o treinamento de modelos de
 
 Para a aplicação em condução autônoma, onde a **velocidade em tempo real** e o **alto recall** (não perder nenhum objeto) são cruciais para a segurança, o **YOLOv8 se apresenta como a escolha mais pragmática e balanceada**.
 
-## Estrutura dos Arquivos
-```
-.
-├── frcnn_kitti_epoch_20.pth      # Checkpoint do modelo Faster R-CNN treinado
-├── mobilenet_kitti_epoch_5.pth     # Checkpoint do modelo MobileNet treinado
-├── kitti_results/                  # Pasta com os resultados do treinamento do YOLO
-├── Untitled6 (7).ipynb             # O notebook Jupyter com todo o código
-└── README.md                       # Este arquivo
-```
