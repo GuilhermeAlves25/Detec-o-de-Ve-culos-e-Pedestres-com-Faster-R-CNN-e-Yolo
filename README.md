@@ -1,1 +1,1 @@
-# Detec-o-de-Ve-culos-e-Pedestres-com-Faster-R-CNN-e-Yolo
+# Detecção de Veículos e Pedestres com Faster R-CNN
